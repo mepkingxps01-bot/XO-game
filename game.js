@@ -77,13 +77,13 @@ function endGame(result, winCombo = []) {
     scores[currentPlayer]++;
     xScoreEl.textContent   = scores.X;
     oScoreEl.textContent   = scores.O;
-    resultIcon.textContent = currentPlayer === 'X' ? '🟣' : '🔵';
+    resultIcon.textContent = currentPlayer === 'X' ? '🦄' : '🌿';
     resultText.textContent = `Player ${currentPlayer} Wins!`;
     statusEl.textContent   = `Player ${currentPlayer} wins!`;
   } else {
     scores.draw++;
     drawScoreEl.textContent = scores.draw;
-    resultIcon.textContent  = '🤝';
+    resultIcon.textContent  = '🌈';
     resultText.textContent  = "It's a Draw!";
     statusEl.textContent    = "It's a draw!";
   }
